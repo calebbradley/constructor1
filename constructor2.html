@@ -10,6 +10,8 @@
 				this.age = age;
 				this.height = height;
 				this.yearsUntilRetire = yearsLeft;
+				this.yearsTillRaise = yearsTill;
+				this.ftTillGiant = ftTill; 
 				this.changeName = changeName;
 				function changeName(name){
 					this.firstname = name;
@@ -21,10 +23,21 @@
 				return numYears;
 			}
 
+			function yearsTill(){
+				var numYears = 30 - this.age;
+				return numYears;
+			}
+
+			function ftTill(){
+				var numFeet = 12 - this.height;
+				return numFeet;
+			}
+
 			myself = new person("Caleb", "Smith", 27, 6);
 			myself.changeName("Terminator, ");
 
-			document.write(myself.firstname);
+			document.write(myself.ftTillGiant());
+			document.write(myself.yearsTillRaise());
 			document.write(myself.yearsUntilRetire());
 		</script>
 
