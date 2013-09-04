@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>More_Practice!</title>
+</head>
+<body>
+		<script>
+			function person(firstname, lastname, age, height){
+				this.firstname = firstname;
+				this.lastname = lastname;
+				this.age = age;
+				this.height = height;
+				this.yearsUntilRetire = yearsLeft;
+				this.changeName = changeName;
+				function changeName(name){
+					this.firstname = name;
+				}			
+			}
+
+			function yearsLeft(){
+				var numYears = 65 - this.age;
+				return numYears;
+			}
+
+			myself = new person("Caleb", "Smith", 27, 6);
+			myself.changeName("Terminator, ");
+
+			document.write(myself.firstname);
+			document.write(myself.yearsUntilRetire());
+		</script>
+
+</body>
+</html>
