@@ -1,0 +1,60 @@
+
+<html>
+	<head>
+		<script type="text/javascript">
+		function Animal(nameOfTheAnimal,typeOfAnimal){
+				this.name=nameOfTheAnimal;
+				this.species=typeOfAnimal;
+				this.isA=function(animalType){
+				  if(animalType==this.species){
+				  	return "Of course, of course.";
+				  } else {
+				  	return "Neigh!";
+				  }
+				}; //end of isA
+			  this.canBeTalkedTo = function(){
+			  	if (this.name=="Mister Ed"){
+			  		return "I am Mister Ed!";
+			  	} else {
+			  		return "Neigh!"
+			  	} 
+
+			  }; //end of canBeTalkedTo method
+			 this.jump = function(){
+			 	if (this.name=="Hurdle"){
+			 		return "I can jump over the fence!";
+			 	} else {
+			 		return "Neigh!"
+			 	}
+
+			 }; //end of jump
+			this.swim = function(){
+			 	if (this.name=="Silver"){
+			 		return "I can swim through the pond!";
+			 	} else {
+			 		return "Splash!"
+			 	}
+
+			}; //end of swim
+		  this.fly = function(){
+			 	if (this.name=="Silver"){
+			 		return "I can fly through the sky!";
+			 	} else {
+			 		return "Splat!"
+			 	}
+
+		  }; //end of swim
+		}; // end of Animal Constructor
+		
+		</script>
+	</head>
+		<script type="text/javascript">
+		mrEd = new Animal("Mister Ed","Horse");
+		Hurdle = new Animal("Hurdle","Horse");
+		Silver = new Animal("Silver","Pig");
+		technological= Silver.fly("Pig");
+		document.write(technological);
+		</script>
+	<body>
+	</body>
+</html>
