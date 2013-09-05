@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>More_Practice!</title>
+</head>
+<body>
+		<script>
+			function person(firstname, lastname, age, height){
+				this.firstname = firstname;
+				this.lastname = lastname;
+				this.age = age;
+				this.height = height;
+				this.yearsUntilRetire = yearsLeft;
+				this.yearsTillRaise = yearsTill;
+				this.ftTillGiant = ftTill; 
+				this.changeName = changeName;
+				function changeName(name){
+					this.firstname = name;
+				}			
+			}
+
+			function yearsLeft(){
+				var numYears = 65 - this.age;
+				return numYears;
+			}
+
+			function yearsTill(){
+				var numYears = 30 - this.age;
+				return numYears;
+			}
+
+			function ftTill(){
+				var numFeet = 12 - this.height;
+				return numFeet;
+			}
+
+			myself = new person("Caleb", "Smith", 27, 6);
+			myself.changeName("Terminator, ");
+
+			document.write(myself.ftTillGiant());
+			document.write(myself.yearsTillRaise());
+			document.write(myself.yearsUntilRetire());
+		</script>
+
+</body>
+</html>

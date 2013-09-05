@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Third Practice Constructor!</title>
+<html>
+<head>
+	<title>More_Practice!</title>
+</head>
+<body>
+		<script>
+			function people(name, age){
+				this.name = name;
+				this.age = age;
+				this.yearsPastCarbonFreeze = yearsPast;
+				this.yearsUntilBlastOff = yearsUntil;
+			}
+
+			function yearsUntil(){
+				var numYears = 1000 + this.age;
+				return numYears;
+			}
+
+			function yearsPast(){
+				var numYears = 1000 - this.age;
+				return numYears;
+			}
+
+
+			var caleb = new people("caleb bradley", 27);
+			var spok = new people("spok", 270);
+
+			document.write(caleb.yearsUntilBlastOff())
+			document.write(spok.yearsUntilBlastOff())
+			document.write(spok.yearsPastCarbonFreeze())
+
+
+		</script>
+
+</body>
+</html>
