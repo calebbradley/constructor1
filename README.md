@@ -1,3 +1,7 @@
+Playing around with Constructors for a Homework assignment. Not intended in any way for production and does not represent 
+  what I have learned since.
+
+
 constructor1
 ============
 
